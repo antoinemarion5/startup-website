@@ -2,26 +2,40 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma Startup</title>
+    <title>Startup - Formulaire</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
             text-align: center;
-            padding: 50px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            margin-bottom: 40px;
         }
         .typeform-container {
             width: 100%;
-            height: 500px;
-            margin: 20px auto;
+            height: 600px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur le site de ma startup</h1>
-    <p>Merci de remplir le formulaire ci-dessous :</p>
-    
-    <!-- Remplacez XLVZxOso par votre ID Typeform -->
-    <div data-tf-widget="antoinemarion5" class="typeform-container"></div>
+    <div class="header">
+        <h1>Bienvenue sur le site de ma startup</h1>
+        <p>Merci de remplir le formulaire ci-dessous :</p>
+    </div>
+
+    <!-- INTÉGRATION TYPEFORM -->
+    <div data-tf-live="01HX123ABCXYZ"></div>
     <script src="//embed.typeform.com/next/embed.js"></script>
+    
+    <p style="margin-top: 30px; color: #666;">
+        <small>Formulaire sécurisé par Typeform</small>
+    </p>
 </body>
 </html>
